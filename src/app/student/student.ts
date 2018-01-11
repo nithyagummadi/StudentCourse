@@ -5,10 +5,10 @@ export class Student {
     course:string[];
     
 
-    constructor(name:string,course:string[]){
+    constructor(id:number,name:string,course:string[]){
 
         this.name=name;
         this.course=course;
-       
+        this.id=id;
     }
 }

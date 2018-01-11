@@ -7,7 +7,7 @@ export class StudentService {
 
     StudentChanged= new EventEmitter<Student[]>();
 
-  private students:Student[]=[new Student('Nithya Gummadi',['math','computers']),new Student('Guna Chandrika',['Economics'])]
+  private students:Student[]=[new Student(1,'Nithya Gummadi',['math','computers']),new Student(2,'Guna Chandrika',['Economics'])]
 
    getStudents()
     {
