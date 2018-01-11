@@ -1,0 +1,33 @@
+<div class="container" style="text-align:center">
+  <div class="row">
+  <div class="col-xs-12" style="align-content: center">
+    <h2> Enrolled Strudents </h2>
+    <table class="table table-striped  center" >
+      <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Name</th> 
+    <th scope="col">Courses</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+      </tr>
+      <tr *ngFor="let s of students; let i= index" >
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.course}}</td>
+        <td><button class="btn btn-success" type="submit" >Update</button></td>
+         <td><button class="btn btn-danger" type="submit"(click)="onDelete(i)">Delete</button></td>
+      </tr>
+      
+    </table>
+    
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+           <h3>NEW STUDENT</h3>
+           <app-new-student></app-new-student>
+
+  </div>
+</div>
+</div>
