@@ -7,14 +7,14 @@
     <th scope="col">Id</th>
     <th scope="col">Name</th> 
     <th scope="col">Courses</th>
-    <th scope="col"></th>
+   
     <th scope="col"></th>
       </tr>
       <tr *ngFor="let s of students; let i= index" >
         <td>{{s.id}}</td>
         <td>{{s.name}}</td>
         <td>{{s.course}}</td>
-        <td><button class="btn btn-success" type="submit" >Update</button></td>
+       
          <td><button class="btn btn-danger" type="submit"(click)="onDelete(i)">Delete</button></td>
       </tr>
       
